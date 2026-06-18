@@ -1,91 +1,376 @@
-# Vendor Onboarding & Compliance Portal - Day 1 Architecture & Setup
+# Vendor Onboarding & Compliance Portal
 
-## 1. System Architecture
-This project implements a decoupled Client-Server architecture:
-- **Frontend**: A React single-page application (SPA) created via Vite. It handles the user interface, role-based routing, and client-side form validation. It uses `axios` for HTTP communication with the backend.
-- **Backend**: A Flask RESTful API. It provides structured endpoints for user registration, login, and simple profile/dashboard fetching using JWT (JSON Web Tokens) for stateless authentication.
-- **Database**: SQLite (managed via SQLAlchemy) is used for the Day 1 baseline. It allows for an easy "Zero Configuration" setup. The schema is defined in python models and maps to the local `.db` file.
-- **Future Integration (Day 2+)**: AWS S3 will be integrated into the backend. The Flask API will generate presigned URLs or handle multipart form uploads to securely stream documents to an S3 bucket without bloating the local database. A reference string pointing to the document URL will be stored in SQLite/PostgreSQL.
+## Architecture, Setup & Deployment Guide
 
-### Interactions:
-1. **Auth Flow**: Frontend sends `POST /login` with credentials. Backend verifies against SQLite, signs a JWT using a secret key, and returns the token and `role` to the client.
-2. **Access Control**: React stores the token in `localStorage` and routes the user to their designated dashboard (`/vendor-dashboard`, `/finance-dashboard`, etc.) based on the returned role. Subsequent API calls to protected routes include the token in the `Authorization: Bearer <token>` header.
+### Version
+
+v1.0
+
+### Author
+
+Afraz Ahamed K. M.
 
 ---
 
-## 2. Project Folder Structure
-A clean, production-ready structure:
+# 1. Project Overview
+
+The Vendor Onboarding & Compliance Portal is a full-stack web application designed to streamline vendor registration, document verification, compliance review, and approval workflows within an organization.
+
+The system centralizes vendor onboarding activities by providing role-based access for Vendors, Compliance Officers, Finance Teams, and Head Administrators while ensuring document validation and audit readiness.
+
+### Key Objectives
+
+* Centralized vendor registration process
+* Secure document submission and storage
+* OCR-based document data extraction
+* Compliance review workflow
+* Finance approval workflow
+* Role-based access control
+* Real-time status tracking
+* Scalable cloud-ready architecture
+
+---
+
+# 2. Technology Stack
+
+## Frontend
+
+* React.js
+* Vite
+* Axios
+* React Router DOM
+* Tailwind CSS / CSS Modules
+
+## Backend
+
+* Flask
+* Flask JWT Extended
+* Flask CORS
+* Python
+
+## Database
+
+* MongoDB
+* MongoDB Compass (Development)
+
+## OCR & Document Processing
+
+* Tesseract OCR
+* Python Image Processing Libraries
+
+## Cloud Services (Future Integration)
+
+* AWS S3
+* AWS EC2
+* AWS CloudFront
+* AWS IAM
+
+## Version Control
+
+* Git
+* GitHub
+
+---
+
+# 3. System Architecture
+
+The application follows a modern three-tier architecture.
+
+### Presentation Layer
+
+React-based frontend responsible for:
+
+* User Interface
+* Role-Based Navigation
+* Form Validation
+* Dashboard Management
+* API Communication
+
+### Application Layer
+
+Flask Backend responsible for:
+
+* Authentication
+* Authorization
+* Business Logic
+* OCR Processing
+* Workflow Management
+* Document Validation
+
+### Data Layer
+
+MongoDB responsible for:
+
+* User Management
+* Vendor Profiles
+* Compliance Records
+* Approval History
+* Document Metadata
+
+---
+
+# 4. User Roles
+
+## Vendor
+
+Responsibilities:
+
+* Register account
+* Create vendor profile
+* Upload required documents
+* Submit profile for review
+* Track application status
+
+---
+
+## Compliance Officer
+
+Responsibilities:
+
+* Review submitted documents
+* Validate OCR results
+* Approve submissions
+* Reject submissions
+* Request corrections
+
+---
+
+## Finance Team
+
+Responsibilities:
+
+* Financial verification
+* Tax validation
+* Banking verification
+* Final finance approval
+
+---
+
+## Head Administrator
+
+Responsibilities:
+
+* Manage users
+* Manage roles
+* Monitor onboarding pipeline
+* Generate reports
+* Audit workflow activities
+
+---
+
+# 5. Authentication Flow
+
+1. User submits login credentials.
+2. Backend validates credentials.
+3. JWT token is generated.
+4. Token is returned to frontend.
+5. Frontend stores token securely.
+6. Protected routes validate token.
+7. User is redirected to role-specific dashboard.
+
+### Security Features
+
+* JWT Authentication
+* Password Hashing
+* Protected API Routes
+* Role-Based Access Control
+* CORS Protection
+
+---
+
+# 6. OCR Verification Module
+
+The OCR module automatically extracts information from uploaded vendor documents.
+
+### Supported Documents
+
+* GST Certificate
+* PAN Card
+* Trade License
+* Insurance Certificate
+* Bank Proof Documents
+
+### OCR Workflow
+
+1. Vendor uploads document.
+2. Backend processes file.
+3. OCR extracts text.
+4. Key fields are identified.
+5. Extracted values are compared with profile information.
+6. Match/Mismatch results are displayed to Compliance Officer.
+
+### Benefits
+
+* Reduced manual verification effort
+* Faster onboarding
+* Improved accuracy
+* Better compliance monitoring
+
+---
+
+# 7. Vendor Workflow
+
+Vendor Registration
+
+↓
+
+Profile Creation
+
+↓
+
+Document Upload
+
+↓
+
+OCR Validation
+
+↓
+
+Submit For Review
+
+↓
+
+Compliance Review
+
+↓
+
+Finance Verification
+
+↓
+
+Final Approval
+
+↓
+
+Vendor Activated
+
+---
+
+# 8. Project Structure
+
 ```text
-vendour onboarding/
+vendor-onboarding-portal/
+│
 ├── backend/
-│   ├── app.py             # Main Flask application and API routes
-│   ├── config.py          # Configuration settings (DB URI, Secrets)
-│   ├── models.py          # SQLAlchemy Database Models (Users Table)
-│   └── requirements.txt   # Python Dependencies
-└── frontend/
-    ├── package.json       # Node.js Dependencies
-    ├── index.html
-    ├── vite.config.js     # Vite configuration
-    └── src/
-        ├── App.jsx        # Routing configuration & Protected Routes
-        ├── main.jsx       # React entry point
-        └── pages/
-            ├── Login.jsx       
-            ├── Register.jsx          
-            ├── VendorDashboard.jsx       
-            ├── ComplianceDashboard.jsx   
-            ├── FinanceDashboard.jsx      
-            └── AdminDashboard.jsx        
+│   ├── app.py
+│   ├── config.py
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   │   └── ocr_service.py
+│   ├── utils/
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── layouts/
+│   │   └── App.jsx
+│   ├── package.json
+│   └── vite.config.js
+│
+├── docs/
+│   ├── Architecture.md
+│   ├── API_Documentation.md
+│   ├── OCR_Module.md
+│   └── Setup_Guide.md
+│
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 3. Setup Instructions
+# 9. Local Development Setup
 
-### Prerequisites
-- Python 3.8+
-- Node.js v16+
-- npm (Node Package Manager)
+## Backend Setup
 
-### Backend Setup
-1. Open a terminal and navigate to the `backend` directory:
-   ```bash
-   cd backend
-   ```
-2. (Optional but recommended) Create and activate a custom Python virtual environment:
-   ```bash
-   python -m venv venv
-   # On Windows: venv\Scripts\activate
-   # On Mac/Linux: source venv/bin/activate
-   ```
-3. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Start the Flask server (it will automatically create `vendor_portal.db` containing the Users table on initial run):
-   ```bash
-   python app.py
-   ```
-   *The backend will now be running on `http://localhost:5000`*
+```bash
+cd backend
 
-### Frontend Setup
-1. Open a *new* terminal window and navigate to the `frontend` directory.
-   ```bash
-   cd frontend
-   ```
-2. Install the necessary packages:
-   ```bash
-   npm install
-   ```
-3. Start the Vite development server:
-   ```bash
-   npm run dev
-   ```
-   *The frontend will typically run on `http://localhost:5173`*
+python -m venv venv
 
-### 4. Testing the Application
-1. Navigate to the frontend URL in your browser. It will redirect you to `/login`.
-2. Click **Register here** to create your first user.
-3. Fill in the fields and select a role (e.g., "Vendor" or "Finance Team").
-4. Submit the form, then login with the new credentials.
-5. You will securely be routed to the respective Dashboard based on the role selected.
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python app.py
+```
+
+Backend URL:
+
+```text
+http://localhost:5000
+```
+
+---
+
+## Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Frontend URL:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# 10. Future Enhancements
+
+## Phase 2
+
+* AWS S3 Document Storage
+* Email Notifications
+* Audit Logs
+* Automated Compliance Checks
+* Advanced Dashboard Analytics
+
+## Phase 3
+
+* AI-Based Risk Scoring
+* Vendor Performance Tracking
+* Multi-Tenant Support
+* Cloud Deployment Pipeline
+
+---
+
+# 11. Deployment Strategy
+
+Frontend:
+
+* React + Vite Build
+* Nginx Hosting
+
+Backend:
+
+* Flask API
+* Gunicorn
+
+Database:
+
+* MongoDB Atlas
+
+Storage:
+
+* AWS S3
+
+Hosting:
+
+* AWS EC2
+
+---
+
+# 12. Conclusion
+
+The Vendor Onboarding & Compliance Portal provides a scalable, secure, and automated solution for vendor registration, document verification, compliance management, and approval workflows. The platform is designed with extensibility in mind, enabling future integration with cloud infrastructure, AI-powered validation systems, and enterprise-grade reporting capabilities.
