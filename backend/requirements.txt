@@ -20,7 +20,6 @@ cachetools==5.5.2
 certifi==2025.11.12
 cffi==2.0.0
 charset-normalizer==3.4.4
-chatbotAI @ file:///C:/Users/afraz%20ahamed%20k%20m/Chatbot
 click==8.3.1
 colorama==0.4.6
 comm==0.2.3
