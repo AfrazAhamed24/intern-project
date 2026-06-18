@@ -1,0 +1,345 @@
+ * Serving Flask app 'app'
+ * Debug mode: on
+DEBUG: Setting Document 6a29219001e18df074319c63 to Approved in DB=vendor_portal, Collection=vendors
+DEBUG: matched_count=1, modified_count=1
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=Screenshot 2026-06-15 142642.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=Screenshot 2026-06-15 142642.png pytesseract_available=True
+OCR DEBUG: received file_data length=324534
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=243383
+OCR DEBUG: image opened successfully format=PNG mode=RGBA size=(410, 431)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: pytesseract exception=TesseractNotFoundError("tesseract is not installed or it's not in your PATH. See README file for more information.")
+OCR DEBUG: upload_vendor_document documentType=PAN Card fileName=Screenshot 2026-06-15 142708.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=PAN Card file_name=Screenshot 2026-06-15 142708.png pytesseract_available=True
+OCR DEBUG: received file_data length=340838
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=255612
+OCR DEBUG: image opened successfully format=PNG mode=RGBA size=(355, 417)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: pytesseract exception=TesseractNotFoundError("tesseract is not installed or it's not in your PATH. See README file for more information.")
+OCR DEBUG: upload_vendor_document documentType=Trade License fileName=Screenshot 2026-06-15 142723.png has_fileData=False
+OCR DEBUG: _run_ocr_for_document invoked document_type=Trade License file_name=Screenshot 2026-06-15 142723.png pytesseract_available=True
+OCR DEBUG: document type does not require OCR
+OCR DEBUG: upload_vendor_document documentType=Bank Proof fileName=Screenshot 2026-06-15 142737.png has_fileData=False
+OCR DEBUG: _run_ocr_for_document invoked document_type=Bank Proof file_name=Screenshot 2026-06-15 142737.png pytesseract_available=True
+OCR DEBUG: document type does not require OCR
+OCR DEBUG: upload_vendor_document documentType=Insurance Certificate fileName=Screenshot 2026-06-15 142751.png has_fileData=False
+OCR DEBUG: _run_ocr_for_document invoked document_type=Insurance Certificate file_name=Screenshot 2026-06-15 142751.png pytesseract_available=True
+OCR DEBUG: document type does not require OCR
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=test_gst.pdf has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test_gst.pdf pytesseract_available=True
+OCR DEBUG: received file_data length=1616
+OCR DEBUG: stripping data URL prefix, detected MIME type=application/pdf
+OCR DEBUG: decoded image bytes length=1190
+OCR DEBUG: detected PDF format from magic bytes
+OCR DEBUG: PDF opened successfully, pages=1
+OCR DEBUG: PDF page 1/1 converted to image size=2480x3509
+OCR DEBUG: PDF conversion produced 1 image(s)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: pytesseract exception=TesseractNotFoundError("tesseract is not installed or it's not in your PATH. See README file for more information.")
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=test_gst.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test_gst.png pytesseract_available=False
+OCR DEBUG: pytesseract import not available
+OCR DEBUG: upload_vendor_document documentType=PAN Card fileName=test_pan.pdf has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=PAN Card file_name=test_pan.pdf pytesseract_available=False
+OCR DEBUG: pytesseract import not available
+TESSERACT: import failed - name 'os' is not defined
+TESSERACT: import failed - name 'os' is not defined
+TESSERACT: import failed - name 'os' is not defined
+TESSERACT: import failed - name 'os' is not defined
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=test_gst.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test_gst.png pytesseract_available=False
+OCR DEBUG: pytesseract import not available
+OCR DEBUG: upload_vendor_document documentType=PAN Card fileName=test_pan.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=PAN Card file_name=test_pan.png pytesseract_available=False
+OCR DEBUG: pytesseract import not available
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=test_gst.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test_gst.png pytesseract_available=True
+OCR DEBUG: received file_data length=13578
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=10167
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1200, 500)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=19
+OCR DEBUG: page 1 OCR text preview='Shik 1242\n\nA MEM a\n'
+OCR DEBUG: combined OCR text length=18
+OCR DEBUG: full OCR text preview='Shik 1242\n\nA MEM a'
+OCR DEBUG: normalized text length=17
+OCR DEBUG: extracted_gst= extracted_pan=
+OCR DEBUG: extracted_business_name=Shik 1242
+OCR DEBUG: extracted_address=N/A
+OCR DEBUG: upload_vendor_document documentType=PAN Card fileName=test_pan.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=PAN Card file_name=test_pan.png pytesseract_available=True
+OCR DEBUG: received file_data length=13578
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=10167
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1200, 500)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=19
+OCR DEBUG: page 1 OCR text preview='Shik 1242\n\nA MEM a\n'
+OCR DEBUG: combined OCR text length=18
+OCR DEBUG: full OCR text preview='Shik 1242\n\nA MEM a'
+OCR DEBUG: normalized text length=17
+OCR DEBUG: extracted_gst= extracted_pan=
+OCR DEBUG: extracted_business_name=Shik 1242
+OCR DEBUG: extracted_address=N/A
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=test_gst.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test_gst.png pytesseract_available=True
+OCR DEBUG: received file_data length=49382
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=37020
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1400, 600)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=137
+OCR DEBUG: page 1 OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F\n'
+OCR DEBUG: combined OCR text length=136
+OCR DEBUG: full OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F'
+OCR DEBUG: normalized text length=134
+OCR DEBUG: extracted_gst= extracted_pan=ABCDE1234F
+OCR DEBUG: extracted_business_name=OCR TEST CORP
+OCR DEBUG: extracted_address=123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE
+OCR DEBUG: upload_vendor_document documentType=PAN Card fileName=test_pan.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=PAN Card file_name=test_pan.png pytesseract_available=True
+OCR DEBUG: received file_data length=49382
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=37020
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1400, 600)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=137
+OCR DEBUG: page 1 OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F\n'
+OCR DEBUG: combined OCR text length=136
+OCR DEBUG: full OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F'
+OCR DEBUG: normalized text length=134
+OCR DEBUG: extracted_gst= extracted_pan=ABCDE1234F
+OCR DEBUG: extracted_business_name=OCR TEST CORP
+OCR DEBUG: extracted_address=123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE
+DEBUG: Setting Document 6a301d60da7be1c2859a055d to Approved in DB=vendor_portal, Collection=vendors
+DEBUG: matched_count=1, modified_count=1
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=test_gst.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test_gst.png pytesseract_available=True
+OCR DEBUG: received file_data length=49382
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=37020
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1400, 600)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=137
+OCR DEBUG: page 1 OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F\n'
+OCR DEBUG: combined OCR text length=136
+OCR DEBUG: full OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F'
+OCR DEBUG: normalized text length=134
+OCR DEBUG: normalized text content='NAME OF THE BUSINESS: OCR TEST CORP GSTIN: 27AABCU1234D12Z5 ADDRESS: 123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE ABCDE1234F'
+OCR DEBUG: GST_REGEX pattern=\b\d{2}[A-Z]{5}\d{4}[A-Z]\dZ[A-Z0-9]\b
+OCR DEBUG: PAN_REGEX pattern=\b[A-Z]{5}\d{4}[A-Z]{1}\b
+OCR DEBUG: GST regex match='None'
+OCR DEBUG: PAN regex match='ABCDE1234F'
+OCR DEBUG: extracted_business_name=OCR TEST CORP
+OCR DEBUG: extracted_address=123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE
+OCR DEBUG: upload_vendor_document documentType=PAN Card fileName=test_pan.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=PAN Card file_name=test_pan.png pytesseract_available=True
+OCR DEBUG: received file_data length=49382
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=37020
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1400, 600)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=137
+OCR DEBUG: page 1 OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F\n'
+OCR DEBUG: combined OCR text length=136
+OCR DEBUG: full OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F'
+OCR DEBUG: normalized text length=134
+OCR DEBUG: normalized text content='NAME OF THE BUSINESS: OCR TEST CORP GSTIN: 27AABCU1234D12Z5 ADDRESS: 123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE ABCDE1234F'
+OCR DEBUG: GST_REGEX pattern=\b\d{2}[A-Z]{5}\d{4}[A-Z]\dZ[A-Z0-9]\b
+OCR DEBUG: PAN_REGEX pattern=\b[A-Z]{5}\d{4}[A-Z]{1}\b
+OCR DEBUG: GST regex match='None'
+OCR DEBUG: PAN regex match='ABCDE1234F'
+OCR DEBUG: extracted_business_name=OCR TEST CORP
+OCR DEBUG: extracted_address=123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE
+DEBUG: Setting Document 6a301dbf021bf7b2876047f0 to Approved in DB=vendor_portal, Collection=vendors
+DEBUG: matched_count=1, modified_count=1
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=test_gst.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test_gst.png pytesseract_available=True
+OCR DEBUG: received file_data length=49382
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=37020
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1400, 600)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=137
+OCR DEBUG: page 1 OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F\n'
+OCR DEBUG: combined OCR text length=136
+OCR DEBUG: full OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F'
+OCR DEBUG: normalized text length=134
+OCR DEBUG: normalized text content='NAME OF THE BUSINESS: OCR TEST CORP GSTIN: 27AABCU1234D12Z5 ADDRESS: 123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE ABCDE1234F'
+OCR DEBUG: GST_REGEX pattern=\b\d{2}[A-Z]{5}\d{4}[A-Z]\dZ[A-Z0-9]\b
+OCR DEBUG: PAN_REGEX pattern=\b[A-Z]{5}\d{4}[A-Z]{1}\b
+OCR DEBUG: GST regex match='None'
+OCR DEBUG: PAN regex match='ABCDE1234F'
+OCR DEBUG: extracted_business_name=OCR TEST CORP
+OCR DEBUG: extracted_address=123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE
+OCR DEBUG: upload_vendor_document documentType=PAN Card fileName=test_pan.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=PAN Card file_name=test_pan.png pytesseract_available=True
+OCR DEBUG: received file_data length=49382
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=37020
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1400, 600)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=137
+OCR DEBUG: page 1 OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F\n'
+OCR DEBUG: combined OCR text length=136
+OCR DEBUG: full OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F'
+OCR DEBUG: normalized text length=134
+OCR DEBUG: normalized text content='NAME OF THE BUSINESS: OCR TEST CORP GSTIN: 27AABCU1234D12Z5 ADDRESS: 123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE ABCDE1234F'
+OCR DEBUG: GST_REGEX pattern=\b\d{2}[A-Z]{5}\d{4}[A-Z]\dZ[A-Z0-9]\b
+OCR DEBUG: PAN_REGEX pattern=\b[A-Z]{5}\d{4}[A-Z]{1}\b
+OCR DEBUG: GST regex match='None'
+OCR DEBUG: PAN regex match='ABCDE1234F'
+OCR DEBUG: extracted_business_name=OCR TEST CORP
+OCR DEBUG: extracted_address=123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE
+DEBUG: Setting Document 6a301e0a021bf7b2876047f5 to Approved in DB=vendor_portal, Collection=vendors
+DEBUG: matched_count=1, modified_count=1
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=test_gst.png has_fileData=True
+_run_ocr_for_document invoked document_type=GST Certificate file_name=test_gst.png pytesseract_available=True
+OCR DEBUG: received file_data length=49382
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=37020
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1400, 600)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=137
+OCR DEBUG: page 1 OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F\n'
+OCR DEBUG: combined OCR text length=136
+OCR DEBUG: full OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F'
+OCR DEBUG: normalized text length=134
+OCR DEBUG: normalized text content='NAME OF THE BUSINESS: OCR TEST CORP GSTIN: 27AABCU1234D12Z5 ADDRESS: 123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE ABCDE1234F'
+OCR DEBUG: GST_REGEX pattern=\b\d{2}[A-Z]{5}\d{4}[A-Z][A-Z0-9]{1,2}Z[A-Z0-9]\b
+OCR DEBUG: PAN_REGEX pattern=\b[A-Z]{5}\d{4}[A-Z]{1}\b
+OCR DEBUG: GST regex match='27AABCU1234D12Z5'
+OCR DEBUG: PAN regex match='ABCDE1234F'
+OCR DEBUG: extracted_business_name=OCR TEST CORP
+OCR DEBUG: extracted_address=123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE
+OCR DEBUG: upload_vendor_document documentType=PAN Card fileName=test_pan.png has_fileData=True
+_run_ocr_for_document invoked document_type=PAN Card file_name=test_pan.png pytesseract_available=True
+OCR DEBUG: received file_data length=49382
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=37020
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(1400, 600)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=137
+OCR DEBUG: page 1 OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F\n'
+OCR DEBUG: combined OCR text length=136
+OCR DEBUG: full OCR text preview='NAME OF THE BUSINESS: OCR TEST CORP\nGSTIN: 27AABCU1234D12Z5\n\nADDRESS: 123 BUSINESS PARK, MUMBAI 400001\nCARD HOLDER: JOHN DOE\n\nABCDE1234F'
+OCR DEBUG: normalized text length=134
+OCR DEBUG: normalized text content='NAME OF THE BUSINESS: OCR TEST CORP GSTIN: 27AABCU1234D12Z5 ADDRESS: 123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE ABCDE1234F'
+OCR DEBUG: GST_REGEX pattern=\b\d{2}[A-Z]{5}\d{4}[A-Z][A-Z0-9]{1,2}Z[A-Z0-9]\b
+OCR DEBUG: PAN_REGEX pattern=\b[A-Z]{5}\d{4}[A-Z]{1}\b
+OCR DEBUG: GST regex match='27AABCU1234D12Z5'
+OCR DEBUG: PAN regex match='ABCDE1234F'
+OCR DEBUG: extracted_business_name=OCR TEST CORP
+OCR DEBUG: extracted_address=123 BUSINESS PARK, MUMBAI 400001 CARD HOLDER: JOHN DOE
+DEBUG: Setting Document 6a301e624eacdf3e3006b213 to Approved in DB=vendor_portal, Collection=vendors
+DEBUG: matched_count=1, modified_count=1
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=Screenshot 2026-06-15 142642.png has_fileData=False
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=Screenshot 2026-06-15 142642.png pytesseract_available=True
+OCR DEBUG: no file_data provided to _extract_ocr_image
+OCR DEBUG: no images available for OCR
+OCR DEBUG: upload_vendor_document documentType=PAN Card fileName=Screenshot 2026-06-15 142708.png has_fileData=False
+OCR DEBUG: _run_ocr_for_document invoked document_type=PAN Card file_name=Screenshot 2026-06-15 142708.png pytesseract_available=True
+OCR DEBUG: no file_data provided to _extract_ocr_image
+OCR DEBUG: no images available for OCR
+OCR DEBUG: upload_vendor_document documentType=Trade License fileName=Screenshot 2026-06-15 142723.png has_fileData=False
+OCR DEBUG: _run_ocr_for_document invoked document_type=Trade License file_name=Screenshot 2026-06-15 142723.png pytesseract_available=True
+OCR DEBUG: document type does not require OCR
+OCR DEBUG: upload_vendor_document documentType=Bank Proof fileName=Screenshot 2026-06-15 142737.png has_fileData=False
+OCR DEBUG: _run_ocr_for_document invoked document_type=Bank Proof file_name=Screenshot 2026-06-15 142737.png pytesseract_available=True
+OCR DEBUG: document type does not require OCR
+OCR DEBUG: upload_vendor_document documentType=Insurance Certificate fileName=Screenshot 2026-06-15 142751.png has_fileData=False
+OCR DEBUG: _run_ocr_for_document invoked document_type=Insurance Certificate file_name=Screenshot 2026-06-15 142751.png pytesseract_available=True
+OCR DEBUG: document type does not require OCR
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test.png pytesseract_available=True
+OCR DEBUG: received file_data length=27338
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=20485
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(800, 400)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=123
+OCR DEBUG: page 1 OCR text preview='GSTIN: 22AAAAA0000A1Z5\nNAME OF BUSINESS: Test Business Pvt Ltd\nPAN: AAAAAO000A\n\nADDRESS: 123, Test Street, Mumbai - 400001\n'
+OCR DEBUG: combined OCR text length=122
+OCR DEBUG: full OCR text preview='GSTIN: 22AAAAA0000A1Z5\nNAME OF BUSINESS: Test Business Pvt Ltd\nPAN: AAAAAO000A\n\nADDRESS: 123, Test Street, Mumbai - 400001'
+OCR DEBUG: normalized text length=121
+OCR DEBUG: extracted_gst=22AAAAA0000A1Z5 extracted_pan=
+OCR DEBUG: extracted_business_name=TEST BUSINESS PVT LTD
+OCR DEBUG: extracted_address=123, TEST STREET, MUMBAI - 400001
+DEBUG: Inserting profile into DB=vendor_portal, Collection=vendors
+OCR DEBUG: upload_vendor_document documentType=GST Certificate fileName=gst_test.png has_fileData=True
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=gst_test.png pytesseract_available=True
+OCR DEBUG: received file_data length=27282
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=20445
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(800, 400)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=101
+OCR DEBUG: page 1 OCR text preview='GSTIN: 22AAAAA0000A1Z5\nNAME OF BUSINESS: Test Company\nPAN: AAAAA0N000A\n\nADDRESS: 123 Test St, Mumbai\n'
+OCR DEBUG: combined OCR text length=100
+OCR DEBUG: full OCR text preview='GSTIN: 22AAAAA0000A1Z5\nNAME OF BUSINESS: Test Company\nPAN: AAAAA0N000A\n\nADDRESS: 123 Test St, Mumbai'
+OCR DEBUG: normalized text length=99
+OCR DEBUG: extracted_gst=22AAAAA0000A1Z5 extracted_pan=
+OCR DEBUG: extracted_business_name=TEST COMPANY
+OCR DEBUG: extracted_address=123 TEST ST, MUMBAI
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe
+OCR DEBUG: upload_vendor_document docType=GST Certificate fileName=test_new.png has_fileData=True fileData_type=str fileData_len=27282
+OCR DEBUG: fileData starts_with='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAGQCAIAAA'
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test_new.png pytesseract_available=True
+OCR DEBUG: received file_data length=27282
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/png
+OCR DEBUG: decoded image bytes length=20445
+OCR DEBUG: image opened successfully format=PNG mode=RGB size=(800, 400)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=101
+OCR DEBUG: page 1 OCR text preview='GSTIN: 22AAAAA0000A1Z5\nNAME OF BUSINESS: Test Company\nPAN: AAAAA0N000A\n\nADDRESS: 123 Test St, Mumbai\n'
+OCR DEBUG: combined OCR text length=100
+OCR DEBUG: full OCR text preview='GSTIN: 22AAAAA0000A1Z5\nNAME OF BUSINESS: Test Company\nPAN: AAAAA0N000A\n\nADDRESS: 123 Test St, Mumbai'
+OCR DEBUG: normalized text length=99
+OCR DEBUG: extracted_gst=22AAAAA0000A1Z5 extracted_pan=
+OCR DEBUG: extracted_business_name=TEST COMPANY
+OCR DEBUG: extracted_address=123 TEST ST, MUMBAI
+OCR DEBUG: ocr_result keys=['ocrStatus', 'ocrText', 'ocrExtractedValue', 'extractedGST', 'extractedPAN', 'extractedBusinessName', 'extractedAddress', 'ocrMatchStatus', 'ocrSourceFile'] ocrStatus=Detected extractedGST='22AAAAA0000A1Z5' extractedPAN=''
+OCR DEBUG: upload_vendor_document docType=GST Certificate fileName=test_large.jpg has_fileData=True fileData_type=str fileData_len=428499
+OCR DEBUG: fileData starts_with='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDB'
+OCR DEBUG: _run_ocr_for_document invoked document_type=GST Certificate file_name=test_large.jpg pytesseract_available=True
+OCR DEBUG: received file_data length=428499
+OCR DEBUG: stripping data URL prefix, detected MIME type=image/jpeg
+OCR DEBUG: decoded image bytes length=321357
+OCR DEBUG: image opened successfully format=JPEG mode=RGB size=(4000, 3000)
+OCR DEBUG: resized image from original size to (2000, 1500)
+OCR DEBUG: running pytesseract on page/image 1 of 1
+OCR DEBUG: page 1 raw OCR text length=107
+OCR DEBUG: page 1 OCR text preview='GSTIN: 22AAAAA0000A12Z5\n\nNAME OF BUSINESS: Big Test Corp\n\nPAN: AAAAAQOO0A\n\nADDRESS: 456 Large Road, Mumbai\n'
+OCR DEBUG: combined OCR text length=106
+OCR DEBUG: full OCR text preview='GSTIN: 22AAAAA0000A12Z5\n\nNAME OF BUSINESS: Big Test Corp\n\nPAN: AAAAAQOO0A\n\nADDRESS: 456 Large Road, Mumbai'
+OCR DEBUG: normalized text length=103
+OCR DEBUG: extracted_gst=22AAAAA0000A12Z5 extracted_pan=
+OCR DEBUG: extracted_business_name=BIG TEST CORP
+OCR DEBUG: extracted_address=456 LARGE ROAD, MUMBAI
+OCR DEBUG: ocr_result keys=['ocrStatus', 'ocrText', 'ocrExtractedValue', 'extractedGST', 'extractedPAN', 'extractedBusinessName', 'extractedAddress', 'ocrMatchStatus', 'ocrSourceFile'] ocrStatus=Detected extractedGST='22AAAAA0000A12Z5' extractedPAN=''
+TESSERACT: configured binary at C:\Program Files\Tesseract-OCR\tesseract.exe

@@ -1,0 +1,824 @@
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 20:11:37] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:11:37] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:11:38] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:11:38] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:11:39] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:11:39] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\__init__.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\aliases.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\utf_8.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\cp1252.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\types.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\importlib\\__init__.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\warnings.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\importlib\\_abc.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\contextlib.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\collections\\__init__.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\keyword.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\operator.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\reprlib.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\functools.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\threading.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\_weakrefset.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\site-packages\\_distutils_hack\\__init__.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\test_ocr.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\test_ocr.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\test_ocr.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\sansio\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\sansio\\scaffold.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\flask\\helpers.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 20:40:36] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:40:36] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:40:37] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:40:37] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:40:56] "OPTIONS /compliance/vendor/6a29219001e18df074319c63/approve HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:40:56] "PUT /compliance/vendor/6a29219001e18df074319c63/approve HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:42:03] "POST /login HTTP/1.1" 401 -
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\test_ocr_direct.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\test_ocr_direct.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\test_ocr.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\test_ocr_direct.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\argparse.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 20:46:10] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:46:10] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:46:10] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:46:10] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:46:15] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:46:15] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:46:15] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:46:16] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\utf_16_le.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 20:54:48] "OPTIONS /register HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:54:49] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 20:55:05] "OPTIONS /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:55:06] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:55:06] "OPTIONS /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:55:06] "OPTIONS /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:55:06] "GET /vendor/profile HTTP/1.1" 404 -
+127.0.0.1 - - [15/Jun/2026 20:55:06] "GET /vendor/profile HTTP/1.1" 404 -
+127.0.0.1 - - [15/Jun/2026 20:55:07] "GET /vendor/profile HTTP/1.1" 404 -
+127.0.0.1 - - [15/Jun/2026 20:55:08] "GET /vendor/profile HTTP/1.1" 404 -
+127.0.0.1 - - [15/Jun/2026 20:56:21] "OPTIONS /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:22] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 20:56:24] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:24] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:24] "GET /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:24] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:25] "GET /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:25] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:45] "OPTIONS /vendor/document HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 255, in run_tesseract
+    proc = subprocess.Popen(cmd_args, **subprocess_args())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\afraz ahamed k m\OneDrive\intern project\vendor-onboarding\backend\app.py", line 207, in _run_ocr_for_document
+    page_text = pytesseract.image_to_string(preprocessed, config='--oem 3 --psm 3')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 423, in image_to_string
+    return {
+           ^
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 426, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 288, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 260, in run_tesseract
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+127.0.0.1 - - [15/Jun/2026 20:56:46] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 20:56:46] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:46] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:54] "OPTIONS /vendor/document HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 255, in run_tesseract
+    proc = subprocess.Popen(cmd_args, **subprocess_args())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\afraz ahamed k m\OneDrive\intern project\vendor-onboarding\backend\app.py", line 207, in _run_ocr_for_document
+    page_text = pytesseract.image_to_string(preprocessed, config='--oem 3 --psm 3')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 423, in image_to_string
+    return {
+           ^
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 426, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 288, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 260, in run_tesseract
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+127.0.0.1 - - [15/Jun/2026 20:56:54] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 20:56:54] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:56:55] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:01] "OPTIONS /vendor/document HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:01] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 20:57:01] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:02] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:07] "OPTIONS /vendor/document HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:07] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 20:57:07] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:07] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:12] "OPTIONS /vendor/document HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:12] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 20:57:13] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:13] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:16] "OPTIONS /vendor/submit-review HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:16] "POST /vendor/submit-review HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:32] "OPTIONS /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:33] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:33] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:34] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:34] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 20:57:34] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:11] "GET /login HTTP/1.1" 405 -
+127.0.0.1 - - [15/Jun/2026 21:06:13] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:06:16] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:18] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:06:20] "GET /vendor/profile HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 255, in run_tesseract
+    proc = subprocess.Popen(cmd_args, **subprocess_args())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\afraz ahamed k m\OneDrive\intern project\vendor-onboarding\backend\app.py", line 207, in _run_ocr_for_document
+    page_text = pytesseract.image_to_string(preprocessed, config='--oem 3 --psm 3')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 423, in image_to_string
+    return {
+           ^
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 426, in <lambda>
+    Output.STRING: lambda: run_and_get_output(*args),
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 288, in run_and_get_output
+    run_tesseract(**kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\pytesseract\pytesseract.py", line 260, in run_tesseract
+    raise TesseractNotFoundError()
+pytesseract.pytesseract.TesseractNotFoundError: tesseract is not installed or it's not in your PATH. See README file for more information.
+127.0.0.1 - - [15/Jun/2026 21:06:23] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:06:25] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:06:28] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:06:30] "GET /compliance/vendors HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 21:07:25] "POST /login HTTP/1.1" 401 -
+127.0.0.1 - - [15/Jun/2026 21:08:25] "POST /login HTTP/1.1" 401 -
+127.0.0.1 - - [15/Jun/2026 21:08:28] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:08:31] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:08:33] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:08:35] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:08:37] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:08:40] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:08:42] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:08:44] "GET /compliance/vendors HTTP/1.1" 200 -
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\shlex.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\string.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\subprocess.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\locale.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\signal.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\csv.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\glob.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\fnmatch.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\pkgutil.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\weakref.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\typing.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\collections\\abc.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\tempfile.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\shutil.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\bz2.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\_compression.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\lzma.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\random.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\bisect.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\__future__.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\logging\\__init__.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\traceback.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\linecache.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\tokenize.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\token.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\textwrap.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\struct.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\datetime.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\contextvars.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\secrets.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\pprint.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\xml\\etree\\__init__.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\xml\\etree\\ElementTree.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\xml\\etree\\ElementPath.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\http\\server.py', reloading
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\difflib.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\netrc.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 21:10:26] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:10:28] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:10:30] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:10:32] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:10:35] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:10:37] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:10:40] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:10:42] "GET /compliance/vendors HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\py_compile.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 21:11:12] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:11:14] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:11:16] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:11:19] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:11:21] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:11:23] "POST /register HTTP/1.1" 400 -
+127.0.0.1 - - [15/Jun/2026 21:11:26] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:11:28] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:12:20] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:12:22] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:12:24] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:12:27] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:12:29] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:12:32] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:12:34] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:12:36] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:12:39] "PUT /compliance/vendor/6a301d60da7be1c2859a055d/approve HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\config.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 21:13:54] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:13:57] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:13:59] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:14:01] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:14:04] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:14:06] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:14:08] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:14:11] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:14:13] "PUT /compliance/vendor/6a301dbf021bf7b2876047f0/approve HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:15:09] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:15:12] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:15:14] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:15:16] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:15:19] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:15:22] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:15:24] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:15:27] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:15:29] "PUT /compliance/vendor/6a301e0a021bf7b2876047f5/approve HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 21:16:38] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:16:40] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:16:42] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:16:45] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:16:47] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:16:50] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:16:52] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:16:54] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:16:56] "PUT /compliance/vendor/6a301e624eacdf3e3006b213/approve HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 21:20:26] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:20:26] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:20:26] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:20:26] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:20:50] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:20:50] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:20:50] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:20:51] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:21:09] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:21:09] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:21:09] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:21:09] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:21:39] "OPTIONS /register HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:21:40] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:22:00] "OPTIONS /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:22:01] "POST /login HTTP/1.1" 401 -
+127.0.0.1 - - [15/Jun/2026 21:22:13] "OPTIONS /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:22:13] "POST /login HTTP/1.1" 401 -
+127.0.0.1 - - [15/Jun/2026 21:22:28] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:22:28] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:22:29] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:22:29] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:22:54] "OPTIONS /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:22:54] "POST /login HTTP/1.1" 401 -
+127.0.0.1 - - [15/Jun/2026 21:23:05] "OPTIONS /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:23:07] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:23:07] "OPTIONS /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:23:07] "OPTIONS /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:23:07] "GET /vendor/profile HTTP/1.1" 404 -
+127.0.0.1 - - [15/Jun/2026 21:23:08] "GET /vendor/profile HTTP/1.1" 404 -
+127.0.0.1 - - [15/Jun/2026 21:23:12] "GET /vendor/profile HTTP/1.1" 404 -
+127.0.0.1 - - [15/Jun/2026 21:23:13] "GET /vendor/profile HTTP/1.1" 404 -
+127.0.0.1 - - [15/Jun/2026 21:24:40] "OPTIONS /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:24:40] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:24:43] "GET /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:24:43] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:24:43] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:24:43] "GET /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:24:44] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:24:44] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:24:53] "OPTIONS /vendor/document HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:24:54] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:24:54] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:24:54] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:00] "OPTIONS /vendor/document HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:00] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:25:00] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:00] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:05] "OPTIONS /vendor/document HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:05] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:25:06] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:06] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:12] "OPTIONS /vendor/document HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:12] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:25:12] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:12] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:18] "OPTIONS /vendor/document HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:18] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:25:19] "OPTIONS /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:19] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:21] "OPTIONS /vendor/submit-review HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:21] "POST /vendor/submit-review HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:24] "OPTIONS /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:24] "OPTIONS /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:24] "GET /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:24] "GET /vendor/profile HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:37] "OPTIONS /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:39] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:49] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:49] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:49] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:49] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:53] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:25:53] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:26:37] "OPTIONS /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:26:38] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:26:38] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:26:38] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:26:38] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:26:39] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:27:07] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:27:07] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:27:07] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:27:07] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:28:24] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:28:24] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:28:25] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:28:25] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:28:25] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:28:25] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:28:25] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:28:25] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:28:26] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:41:15] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:41:15] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:41:16] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:41:16] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\threading.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\werkzeug\\serving.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 21:42:50] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:42:50] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:42:51] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:42:51] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:03] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:03] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:04] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:04] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:27] "OPTIONS /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:31] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:31] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:31] "OPTIONS /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:31] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:32] "GET /compliance/vendors HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:53] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:53] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:53] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:43:53] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:47:38] "POST /debug/ocr/validate HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:48:16] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:48:19] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:48:22] "POST /vendor/profile HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:48:25] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:48:27] "GET /vendor/documents HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:48:31] "POST /register HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:48:35] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:48:37] "GET /compliance/vendors HTTP/1.1" 200 -
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+ * Detected change in 'C:\\Users\\afraz ahamed k m\\OneDrive\\intern project\\vendor-onboarding\\backend\\app.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\afraz ahamed k m\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\werkzeug\serving.py", line 806, in serve_forever
+    super().serve_forever(poll_interval=poll_interval)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 233, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 10038] An operation was attempted on something that is not a socket
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 21:55:53] "GET /debug/ocr/status HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:56:04] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:56:06] "POST /admin/reprocess-ocr HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:56:36] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:56:39] "POST /vendor/document HTTP/1.1" 201 -
+127.0.0.1 - - [15/Jun/2026 21:57:21] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:57:26] "POST /vendor/document HTTP/1.1" 201 -
+ * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\\Lib\\argparse.py', reloading
+Exception in thread Thread-2 (serve_forever):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\threading.py", line 1045, in _bootstrap_inner
+ * Restarting with watchdog (windowsapi)
+ * Debugger is active!
+ * Debugger PIN: 119-176-339
+127.0.0.1 - - [15/Jun/2026 21:59:32] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:59:32] "OPTIONS /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:59:32] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -
+127.0.0.1 - - [15/Jun/2026 21:59:32] "GET /compliance/vendors?status=All&search= HTTP/1.1" 200 -

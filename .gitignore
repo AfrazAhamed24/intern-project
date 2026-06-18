@@ -1,0 +1,12 @@
+﻿__pycache__/
+node_modules/
+.env
+.vscode/
+dist/
+build/
+*.log
+*.err
+*.out
+debug_vendors.json
+venv/
+.venv/
