@@ -1,4 +1,5 @@
 import os
+import uuid
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from config import Config
@@ -12,6 +13,11 @@ from functools import wraps
 from pymongo import MongoClient
 from bson.objectid import ObjectId
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
+
+try:
+    import boto3
+except ImportError:
+    boto3 = None
 
 try:
     import pytesseract
@@ -50,6 +56,52 @@ CORS(app)
 client = MongoClient(app.config['MONGO_URI'])
 # Uses the 'vendor_portal' database specified in the URI, explicitly casted to prevent ENV var overrides
 db = client['vendor_portal']
+
+# Initialize S3 Client
+s3_client = None
+S3_BUCKET = app.config.get('S3_BUCKET')
+if boto3 and app.config.get('AWS_ACCESS_KEY_ID'):
+    try:
+        s3_client = boto3.client(
+            's3',
+            aws_access_key_id=app.config['AWS_ACCESS_KEY_ID'],
+            aws_secret_access_key=app.config['AWS_SECRET_ACCESS_KEY'],
+            region_name=app.config.get('AWS_REGION', 'us-east-1')
+        )
+        print('S3: client initialized', flush=True)
+    except Exception as e:
+        print(f'S3: init failed - {e}', flush=True)
+
+
+def _s3_upload(file_bytes, file_name, content_type='application/octet-stream'):
+    if not s3_client or not S3_BUCKET:
+        return None
+    ext = file_name.rsplit('.', 1)[-1] if '.' in file_name else 'bin'
+    key = f"documents/{uuid.uuid4().hex}.{ext}"
+    s3_client.put_object(Bucket=S3_BUCKET, Key=key, Body=file_bytes, ContentType=content_type)
+    return key
+
+
+def _s3_delete(key):
+    if not s3_client or not S3_BUCKET or not key:
+        return
+    try:
+        s3_client.delete_object(Bucket=S3_BUCKET, Key=key)
+    except Exception:
+        pass
+
+
+def _s3_presigned_url(key, expiration=3600):
+    if not s3_client or not S3_BUCKET or not key:
+        return None
+    try:
+        return s3_client.generate_presigned_url(
+            'get_object',
+            Params={'Bucket': S3_BUCKET, 'Key': key},
+            ExpiresIn=expiration
+        )
+    except Exception:
+        return None
 
 OCR_DOCUMENT_TYPES = {'GST Certificate', 'PAN Card'}
 GST_REGEX = re.compile(r'\b\d{2}[A-Z]{5}\d{4}[A-Z][A-Z0-9]{1,2}Z[A-Z0-9]\b')
@@ -332,6 +384,8 @@ def _get_vendor_document_summaries(vendor_id):
         doc.pop('fileData', None)
         doc['_id'] = str(doc['_id'])
         doc['vendorId'] = str(doc['vendorId'])
+        if doc.get('s3Key'):
+            doc['fileUrl'] = _s3_presigned_url(doc['s3Key']) or doc.get('fileUrl', '')
         if 'uploadDate' in doc and isinstance(doc['uploadDate'], datetime.datetime):
             doc['uploadDate'] = doc['uploadDate'].isoformat()
         if doc.get('documentType') in {'GST Certificate', 'PAN Card'}:
@@ -1353,6 +1407,13 @@ def upload_vendor_document(current_user):
         return jsonify({'message': 'Missing required fields'}), 400
         
     # Overwrite/delete any existing document of the same type for this vendor
+    old_docs = list(db.documents.find({
+        "vendorId": current_user['_id'],
+        "documentType": data['documentType']
+    }))
+    for old_doc in old_docs:
+        if old_doc.get('s3Key'):
+            _s3_delete(old_doc['s3Key'])
     db.documents.delete_many({
         "vendorId": current_user['_id'],
         "documentType": data['documentType']
@@ -1368,16 +1429,21 @@ def upload_vendor_document(current_user):
     }
 
     fd = data.get('fileData')
-    print(f"OCR DEBUG: upload_vendor_document docType={data['documentType']} fileName={data['fileName']} has_fileData={bool(fd)} fileData_type={type(fd).__name__} fileData_len={len(fd) if fd else 0}")
+    s3_key = None
     if fd:
-        print(f"OCR DEBUG: fileData starts_with={repr(fd[:60])}")
-    else:
-        print(f"OCR DEBUG: fileData is None or empty - OCR will not run")
-
-    new_doc['fileData'] = fd
+        try:
+            raw = fd.split(',', 1)[1] if ',' in fd else fd
+            file_bytes = base64.b64decode(raw)
+            ext = data['fileName'].rsplit('.', 1)[-1] if '.' in data['fileName'] else 'bin'
+            content_type = 'application/pdf' if ext.lower() == 'pdf' else 'image/png' if ext.lower() in ('png',) else 'image/jpeg'
+            s3_key = _s3_upload(file_bytes, data['fileName'], content_type)
+            if s3_key:
+                new_doc['s3Key'] = s3_key
+                new_doc['fileUrl'] = _s3_presigned_url(s3_key)
+        except Exception as e:
+            print(f'S3 upload error: {e}')
 
     ocr_result = _run_ocr_for_document(data['documentType'], fd, data['fileName'])
-    print(f"OCR DEBUG: ocr_result keys={list(ocr_result.keys())} ocrStatus={ocr_result.get('ocrStatus')} extractedGST={ocr_result.get('extractedGST')!r} extractedPAN={ocr_result.get('extractedPAN')!r}")
     new_doc.update(ocr_result)
 
     if data['documentType'] == 'GST Certificate' and new_doc.get('extractedGST'):
@@ -1395,6 +1461,7 @@ def upload_vendor_document(current_user):
             'documentType': new_doc['documentType'],
             'fileName': new_doc['fileName'],
             'status': new_doc['status'],
+            'fileUrl': new_doc.get('fileUrl', ''),
             'ocrStatus': new_doc.get('ocrStatus', 'Not Detected'),
             'ocrExtractedValue': new_doc.get('ocrExtractedValue', ''),
             'extractedGST': new_doc.get('extractedGST', ''),
@@ -1418,6 +1485,8 @@ def get_vendor_documents(current_user):
         doc.pop('fileData', None)
         doc['_id'] = str(doc['_id'])
         doc['vendorId'] = str(doc['vendorId'])
+        if doc.get('s3Key'):
+            doc['fileUrl'] = _s3_presigned_url(doc['s3Key']) or doc.get('fileUrl', '')
         if 'uploadDate' in doc and isinstance(doc['uploadDate'], datetime.datetime):
             doc['uploadDate'] = doc['uploadDate'].isoformat()
         docs_list.append(doc)
@@ -1440,6 +1509,8 @@ def delete_vendor_document(current_user, doc_id):
     if doc['vendorId'] != current_user['_id']:
         return jsonify({'message': 'Unauthorized'}), 403
         
+    if doc.get('s3Key'):
+        _s3_delete(doc['s3Key'])
     db.documents.delete_one({"_id": ObjectId(doc_id)})
     return jsonify({'message': 'Document deleted successfully', 'success': True}), 200
 
