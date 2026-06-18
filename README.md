@@ -1,302 +1,489 @@
-<div align="center">
-
-#  Vendor Onboarding & Compliance Portal
-
-### Transforming Manual Vendor Management into a Secure, Auditable, and Scalable Digital Workflow
+# 🚀 Vendor Onboarding & Compliance Portal
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-  <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
-  <img src="https://img.shields.io/badge/AWS_S3-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="60" height="60"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg" width="60" height="60"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="60" height="60"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="60" height="60"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="80" height="60"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="60" height="60"/>
 </p>
+
+<h3 align="center">
+Enterprise SaaS Platform for Vendor Registration, OCR-Based Compliance Validation, Finance Approval Workflows, and Audit Management
+</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Active_Development-success" />
-  <img src="https://img.shields.io/badge/Sprint-10_Days-blue" />
-  <img src="https://img.shields.io/badge/Roles-4-purple" />
-  <img src="https://img.shields.io/badge/Workflow_Stages-5-orange" />
+  <img src="https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Frontend-React_19-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Backend-Flask_3.0-black?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/OCR-Tesseract-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Cloud-AWS_S3-orange?style=for-the-badge"/>
 </p>
 
-</div>
+---
+
+# 🌟 Overview
+
+The **Vendor Onboarding & Compliance Portal** is a full-stack enterprise workflow management platform designed to digitize and automate the complete vendor onboarding lifecycle.
+
+The platform eliminates manual onboarding processes involving spreadsheets, emails, document exchanges, and fragmented approval chains by providing a centralized, secure, and scalable solution.
+
+Organizations can efficiently manage vendor registrations, automate compliance verification through OCR, streamline finance approvals, maintain audit trails, and gain real-time visibility into onboarding progress.
 
 ---
 
-# 📖 Overview
+# 🎯 Business Impact
 
-The Vendor Onboarding & Compliance Portal is a full-stack enterprise workflow application designed to digitize and automate the complete vendor onboarding lifecycle.
+### Problems Solved
 
-Instead of relying on spreadsheets, emails, WhatsApp messages, and manual follow-ups, organizations can use a centralized platform where vendors register, submit company information, undergo compliance review, and track approval status in real time.
+* 📧 Vendor information scattered across emails
+* 📊 Spreadsheet-based tracking
+* 🔍 Manual GST and PAN verification
+* ⏳ Long onboarding cycles
+* 🔁 Duplicate vendor registrations
+* 📋 Missing audit trails
+* 💰 Delayed finance approvals
+* 📉 Limited workflow visibility
 
-The platform improves transparency, reduces onboarding delays, prevents duplicate registrations, and creates an auditable approval workflow.
-
----
-
-# 🎯 Business Problem
-
-Organizations commonly face:
-
-- 📧 Vendor data scattered across emails and documents
-- 🔍 Manual verification processes
-- ⏳ Long onboarding cycles
-- 🔁 Duplicate vendor registrations
-- 📊 Lack of visibility into application status
-- 📋 Missing audit trails
-- 💰 Delays in finance approval and payment processing
-
----
-
-# 💡 Solution
-
-This platform centralizes the onboarding workflow into a secure web application.
-
-### Key Benefits
+### Benefits Delivered
 
 ✅ Centralized Vendor Registration
 
-✅ Real-Time Status Tracking
+✅ OCR-Powered Document Verification
 
-✅ Compliance Review Workflow
+✅ Compliance Automation
 
-✅ Role-Based Access Control
+✅ Finance Approval Workflow
 
-✅ Secure Authentication
+✅ Audit Logging & Tracking
 
-✅ Audit-Friendly Process
+✅ Real-Time Status Monitoring
 
-✅ Future AWS Cloud Integration
+✅ Cloud-Based Document Storage
+
+✅ Enterprise-Ready Architecture
 
 ---
 
-# 🏗️ System Architecture
+# 🏗️ Architecture
 
 ```text
-                     ┌─────────────────────┐
-                     │      Vendor         │
-                     └──────────┬──────────┘
-                                │
-                                ▼
-                     ┌─────────────────────┐
-                     │   React Frontend    │
-                     └──────────┬──────────┘
-                                │ Axios
-                                ▼
-                     ┌─────────────────────┐
-                     │    Flask Backend    │
-                     │ JWT + RBAC + APIs   │
-                     └──────────┬──────────┘
-                                │
-                ┌───────────────┴───────────────┐
-                ▼                               ▼
-      ┌──────────────────┐         ┌──────────────────┐
-      │     MongoDB      │         │      AWS S3      │
-      │ Users & Vendors  │         │ Vendor Documents │
-      └──────────────────┘         └──────────────────┘
+┌───────────────────────────────┐
+│        React Frontend         │
+│   React 19 + Vite + RBAC      │
+└───────────────┬───────────────┘
+                │
+                │ Axios API Calls
+                ▼
+┌───────────────────────────────┐
+│         Flask API             │
+│ JWT • OCR • Workflows • RBAC  │
+└──────────┬──────────┬─────────┘
+           │          │
+           ▼          ▼
+
+ ┌───────────────┐  ┌───────────────┐
+ │   MongoDB     │  │ OCR Engine    │
+ │               │  │ Tesseract     │
+ │ Users         │  │ PyMuPDF       │
+ │ Vendors       │  │ Pillow        │
+ │ Documents     │  └───────────────┘
+ │ Audit Logs    │
+ └───────┬───────┘
+         │
+         ▼
+
+ ┌─────────────────┐
+ │     AWS S3      │
+ │ Document Store  │
+ └─────────────────┘
 ```
 
 ---
 
-# ✨ Core Features
+# ⚙️ Technology Stack
 
-## 🔐 Authentication
-
-- User Registration
-- Secure Login
-- Password Hashing
-- JWT Authentication
-
-## 👥 Role-Based Access Control
-
-- Vendor
-- Compliance Officer
-- Finance Team
-- Super Admin
-
-## 🏢 Vendor Management
-
-- Create Profile
-- Update Profile
-- Track Status
-- Manage Company Information
-
-## ✅ Compliance Workflow
-
-- View Vendor Queue
-- Review Vendor Details
-- Approve Vendors
-- Reject Vendors
-- Request Corrections
-
-## 📊 Status Tracking
-
-- Draft
-- Under Review
-- Approved
-- Rejected
-- Correction Requested
+| Category             | Technology          |
+| -------------------- | ------------------- |
+| 🎨 Frontend          | React 19 + Vite 8   |
+| 🎯 Styling           | Tailwind CSS 4      |
+| 🎨 Icons             | Lucide React        |
+| 🔄 Routing           | React Router DOM v7 |
+| 🌐 API Communication | Axios               |
+| ⚙️ Backend           | Flask 3.0           |
+| 🔐 Authentication    | JWT                 |
+| 🗄️ Database         | MongoDB (PyMongo)   |
+| 🤖 OCR Engine        | Tesseract OCR       |
+| 📄 PDF Processing    | PyMuPDF             |
+| 🖼️ Image Processing | Pillow              |
+| ☁️ Cloud Storage     | AWS S3              |
+| 🚀 Deployment        | AWS                 |
+| 🔧 Version Control   | Git & GitHub        |
 
 ---
 
-# 👥 User Roles
+# 👥 Role-Based Access Control
 
-| Role | Responsibility |
-|--------|---------------|
-| 🏢 Vendor | Register, create profile, track status |
-| ✅ Compliance Officer | Review and approve vendors |
-| 💰 Finance Team | Validate financial information |
-| ⚙️ Super Admin | Manage platform and workflows |
+## 🏢 Vendor
+
+* Create Profile
+* Upload Documents
+* Submit for Review
+* Track Status
+* View OCR Results
 
 ---
 
-# 🔄 Workflow
+## 🛡️ Compliance Officer
+
+* Review Vendor Queue
+* Validate OCR Results
+* Compare Profile vs Document Data
+* Approve Vendors
+* Reject Vendors
+* Request Corrections
+
+---
+
+## 💰 Finance Team
+
+* Review Compliance Approved Vendors
+* Validate Financial Information
+* Verify Banking Details
+* Approve Finance Requests
+* Reject Finance Requests
+
+---
+
+## ⚙️ Super Admin
+
+* Monitor Entire Workflow
+* Manage Vendors
+* Manage Statuses
+* Access Audit Logs
+* Track Platform Analytics
+
+---
+
+# 🤖 OCR Verification Engine
+
+One of the platform's core capabilities.
+
+The OCR module automatically extracts data from uploaded vendor documents and compares it against submitted profile information.
+
+### Supported Documents
+
+| Document              |
+| --------------------- |
+| GST Certificate       |
+| PAN Card              |
+| Trade License         |
+| Bank Proof            |
+| Insurance Certificate |
+
+### OCR Workflow
+
+```text
+Document Upload
+       ↓
+OCR Processing
+       ↓
+Text Extraction
+       ↓
+GST/PAN Detection
+       ↓
+Field Matching
+       ↓
+Match / Mismatch Analysis
+       ↓
+Compliance Review
+```
+
+### OCR Features
+
+✅ Automatic Text Extraction
+
+✅ GST Validation
+
+✅ PAN Validation
+
+✅ OCR Reprocessing
+
+✅ Match/Mismatch Detection
+
+✅ Compliance Comparison Dashboard
+
+---
+
+# 🔄 Vendor Lifecycle Workflow
 
 ```text
 Vendor Registration
         ↓
-Login & JWT Authentication
+Profile Creation
         ↓
-Create Vendor Profile
+Document Upload
         ↓
-Status = Draft
+OCR Validation
+        ↓
+Submit For Review
         ↓
 Compliance Review
         ↓
- ┌──────────┬──────────┬─────────────┐
- │          │          │             │
- ▼          ▼          ▼             │
-Approve   Reject   Correction        │
- │          │          │             │
- ▼          ▼          ▼             │
-Status   Status   Vendor Updates ◄───┘
-Updated  Updated      Profile
+Finance Approval
+        ↓
+Admin Activation
+        ↓
+ACTIVE VENDOR
 ```
 
 ---
 
-# 🗄️ Database Collections
+# 🌟 Core Features
 
-## Users
+## 🔐 Authentication
 
-- Full Name
-- Email
-- Password Hash
-- Role
-- Status
-- Created At
+* JWT Login
+* User Registration
+* Role-Based Access Control
+* Protected Routes
 
-## Vendors
+## 🏢 Vendor Dashboard
 
-- Company Name
-- GST Number
-- PAN Number
-- Contact Person
-- Address
-- Region
-- Category
-- Status
+* Workflow Progress Timeline
+* Document Summary
+* OCR Status Tracking
+* Activity Feed
+* Readiness Indicators
 
----
+## 📄 Document Management
 
-# 🛠️ Technology Stack
+* Upload Documents
+* Delete Documents
+* OCR Status Badges
+* Validation Checks
 
-| Layer | Technology |
-|---------|-------------|
-| Frontend | React.js |
-| Backend | Flask |
-| Database | MongoDB |
-| Authentication | JWT |
-| Version Control | Git & GitHub |
-| Cloud Storage | AWS S3 (Planned) |
-| Deployment | AWS EC2 (Planned) |
+## 🛡️ Compliance Dashboard
 
----
+* Vendor Review Queue
+* OCR Comparison Tables
+* Approve / Reject / Correction Workflow
 
-# 📈 Development Progress
+## 💰 Finance Dashboard
 
-| Module | Status |
-|----------|---------|
-| Authentication | ✅ Complete |
-| MongoDB Integration | ✅ Complete |
-| JWT Security | ✅ Complete |
-| Vendor Profile Module | ✅ Complete |
-| Compliance Workflow | ✅ Complete |
-| Document Upload | 🚧 In Progress |
-| AWS S3 Integration | 🚧 In Progress |
-| Finance Workflow | ⏳ Planned |
-| Deployment | ⏳ Planned |
+* Finance Approval Queue
+* Compliance Verification
+* Financial Validation Checklist
+
+## ⚙️ Admin Dashboard
+
+* Executive Analytics
+* Vendor Management
+* Audit Logs
+* Operational Metrics
 
 ---
 
-# 🚀 Future Enhancements
+# 📊 Analytics & Monitoring
 
-## ☁️ Cloud Features
+### Executive Metrics
 
-- AWS S3 Document Storage
-- AWS EC2 Deployment
-- Presigned URL Uploads
+* Total Vendors
+* Active Vendors
+* Draft Vendors
+* Under Review Vendors
+* Approved Vendors
+* Rejected Vendors
 
-## 📧 Notification System
+### Operational Metrics
 
-- Vendor Submission Alerts
-- Approval Notifications
-- Rejection Notifications
-- Correction Request Emails
+* Approval Rate
+* Rejection Rate
+* Pending Reviews
+* Finance Queue
+* OCR Ready Documents
 
-## 🤖 AI-Assisted Compliance
+---
 
-- OCR-Based Document Extraction
-- GST Validation
-- PAN Validation
-- Profile vs Document Comparison
-- Vendor Risk Scoring
-- Compliance Recommendation Engine
+# 📋 Audit Logging
+
+Every major system activity is recorded.
+
+Tracked Events:
+
+* Login Activities
+* Vendor Registration
+* Profile Updates
+* Document Uploads
+* OCR Processing
+* Compliance Actions
+* Finance Approvals
+* Admin Actions
+
+---
+
+# ☁️ AWS Cloud Integration
+
+### Implemented
+
+✅ AWS S3 Document Storage
+
+✅ Secure File Uploads
+
+✅ Cloud-Based Document Retrieval
+
+✅ Reduced Database Storage Overhead
+
+### Benefits
+
+* Scalability
+* Reliability
+* Durability
+* Cost Efficiency
+* Enterprise Readiness
+
+---
+
+# 🎨 UI/UX Enhancements
+
+### Modern Design System
+
+* 🌙 Dark Mode Support
+* 📱 Mobile Responsive Design
+* 🎯 Lucide SVG Icons
+* ⚡ Fast Navigation
+* ♿ Accessibility Improvements
+* 🎨 Tailwind Design Tokens
+
+### Engineering Improvements
+
+* Centralized API Layer
+* Environment-Based Configuration
+* Reusable Components
+* CSS Optimization
+* Modular Architecture
+
+---
+
+# 📁 Project Structure
+
+```text
+vendor-onboarding-portal/
+
+├── backend/
+│   ├── app.py
+│   ├── config.py
+│   ├── routes/
+│   ├── services/
+│   │   └── ocr_service.py
+│   ├── models/
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── components/
+│   │   ├── layouts/
+│   │   ├── services/
+│   │   └── lib/
+│   └── package.json
+│
+├── docs/
+│   ├── Architecture.md
+│   ├── API_Documentation.md
+│   ├── Setup_Guide.md
+│   └── Screenshots/
+│
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 📈 Project Status
+
+| Module              | Status      |
+| ------------------- | ----------- |
+| Authentication      | ✅ Completed |
+| Vendor Profile      | ✅ Completed |
+| Document Upload     | ✅ Completed |
+| OCR Verification    | ✅ Completed |
+| Compliance Workflow | ✅ Completed |
+| Finance Workflow    | ✅ Completed |
+| Admin Dashboard     | ✅ Completed |
+| Audit Logs          | ✅ Completed |
+| AWS S3 Integration  | ✅ Completed |
+| UI/UX Modernization | ✅ Completed |
+| Cloud Deployment    | ✅ Completed |
 
 ---
 
 # 📸 Screenshots
 
-### Login Page
+## Login Page
 
-(Add Screenshot)
+*Add Screenshot*
 
-### Vendor Dashboard
+## Vendor Dashboard
 
-(Add Screenshot)
+*Add Screenshot*
 
-### Compliance Dashboard
+## Compliance Dashboard
 
-(Add Screenshot)
+*Add Screenshot*
 
-### Vendor Profile Module
+## Finance Dashboard
 
-(Add Screenshot)
+*Add Screenshot*
+
+## Admin Dashboard
+
+*Add Screenshot*
+
+---
+
+# 🚀 Future Enhancements
+
+### AI & Automation
+
+* AI-Based Vendor Risk Scoring
+* Compliance Recommendation Engine
+* Automated GST Verification
+* Automated PAN Verification
+
+### Enterprise Features
+
+* Email Notifications
+* Workflow Escalation Rules
+* Multi-Tenant Support
+* Advanced Reporting
 
 ---
 
 # 👨‍💻 Author
 
-## Afraz Ahamed K M
+## Afraz Ahamed K. M.
 
-Computer Science & Engineering
+**B.E. Computer Science & Engineering (AI & ML)**
 
-M. Kumarasamy College of Engineering
+🏫 M. Kumarasamy College of Engineering
 
-GitHub:
-https://github.com/AfrazAhamed24
-
----
-
-# 🎯 Project Goal
-
-To transform a traditionally manual vendor onboarding process into a centralized, transparent, secure, and scalable enterprise workflow platform that improves compliance efficiency, reduces onboarding delays, and provides real-time visibility to all stakeholders.
+💻 GitHub: https://github.com/AfrazAhamed24
 
 ---
 
-<div align="center">
+# 🎯 Project Vision
 
-### ⭐ If you like this project, consider starring the repository.
+To build a secure, scalable, intelligent, and cloud-native vendor management ecosystem that transforms traditional onboarding workflows into a transparent, automated, and audit-ready digital experience.
 
-Built with ❤️ using React, Flask, MongoDB, JWT & AWS
+---
 
-</div>
+<p align="center">
+  <h3 align="center">⭐ If you found this project useful, consider starring the repository ⭐</h3>
+</p>
+
+<p align="center">
+Built with ❤️ using React • Flask • MongoDB • OCR • AWS S3
+</p>
