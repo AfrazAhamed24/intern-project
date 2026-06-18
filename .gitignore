@@ -10,3 +10,5 @@ build/
 debug_vendors.json
 venv/
 .venv/
+backend/flask_error.txt
+backend/flask_output.txt
