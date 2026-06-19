@@ -424,23 +424,39 @@ vendor-onboarding-portal/
 
 ## Login Page
 
-*Add Screenshot*
+![Login Page](screenshots/Screenshot%202026-06-19%20082627.png)
 
 ## Vendor Dashboard
 
-*Add Screenshot*
+![Vendor Dashboard](screenshots/Screenshot%202026-06-19%20082711.png)
 
-## Compliance Dashboard
+## Vendor Documents
 
-*Add Screenshot*
-
-## Finance Dashboard
-
-*Add Screenshot*
+![Vendor Documents](screenshots/Screenshot%202026-06-19%20082725.png)
 
 ## Admin Dashboard
 
-*Add Screenshot*
+![Admin Dashboard](screenshots/Screenshot%202026-06-19%20093910.png)
+
+## Vendor Management
+
+![Vendor Management](screenshots/Screenshot%202026-06-19%20093931.png)
+
+## Finance Dashboard
+
+![Finance Dashboard](screenshots/Screenshot%202026-06-19%20094024.png)
+
+## Finance Approval Workflow
+
+![Finance Approval Workflow](screenshots/Screenshot%202026-06-19%20094039.png)
+
+## Compliance Dashboard
+
+![Compliance Dashboard](screenshots/Screenshot%202026-06-19%20094517.png)
+
+## Compliance Review Modal
+
+![Compliance Review Modal](screenshots/Screenshot%202026-06-19%20094536.png)
 
 ---
 
