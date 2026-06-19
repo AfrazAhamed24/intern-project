@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import api from '../lib/api';
-import { FileText, Upload, Trash2, ShieldCheck, Landmark, ScrollText, Fingerprint } from 'lucide-react';
+import { FileText, Upload, Trash2, ShieldCheck, Landmark, ScrollText, Fingerprint, Eye } from 'lucide-react';
 import Layout from '../components/Layout';
 import { Button } from '../components/ui/button';
 import { Badge } from '../components/ui/badge';
@@ -193,10 +193,18 @@ function VendorDocuments() {
                             <Badge variant={statusVariant(doc.ocrStatus)} className="text-[10px]">{doc.ocrStatus || 'Not Detected'}</Badge>
                           </div>
                         </div>
-                        <Button variant="danger" size="sm" className="w-full" disabled={isDeleting} onClick={() => handleDelete(doc._id, reqDoc.type)}>
+                        <div className="flex gap-2 mt-auto pt-3">
+                        {doc.fileUrl && (
+                          <Button variant="default" size="sm" className="flex-1" onClick={() => window.open(doc.fileUrl, '_blank')}>
+                            <Eye className="h-3.5 w-3.5" />
+                            View
+                          </Button>
+                        )}
+                        <Button variant="danger" size="sm" className="flex-1" disabled={isDeleting} onClick={() => handleDelete(doc._id, reqDoc.type)}>
                           <Trash2 className="h-3.5 w-3.5" />
                           {isDeleting ? 'Deleting…' : 'Remove'}
                         </Button>
+                        </div>
                       </div>
                     ) : (
                       <div className="mt-auto pt-3">
