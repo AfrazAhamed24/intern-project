@@ -1441,7 +1441,7 @@ def upload_vendor_document(current_user):
                 new_doc['s3Key'] = s3_key
                 new_doc['fileUrl'] = _s3_presigned_url(s3_key)
         except Exception as e:
-            print(f'S3 upload error: {e}')
+            print(f'S3 upload error: {e}', flush=True)
 
     ocr_result = _run_ocr_for_document(data['documentType'], fd, data['fileName'])
     new_doc.update(ocr_result)

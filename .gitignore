@@ -12,3 +12,8 @@ venv/
 .venv/
 backend/flask_error.txt
 backend/flask_output.txt
+backend/flask_out.txt
+backend/s3_debug.log
+backend/test_*.py
+backend/run_test.py
+backend/*_token.txt
