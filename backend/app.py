@@ -105,7 +105,9 @@ def _s3_presigned_url(key, expiration=3600):
 
 OCR_DOCUMENT_TYPES = {'GST Certificate', 'PAN Card'}
 GST_REGEX = re.compile(r'\b\d{2}[A-Z]{5}\d{4}[A-Z][A-Z0-9]{1,2}Z[A-Z0-9]\b')
+GST_REGEX_LENIENT = re.compile(r'[\dO][\dO][A-Z][A-Z][A-Z][A-Z][A-Z][\dO][\dO][\dO][\dO][A-Z][\dOIA][A-Z][\dOIA]')
 PAN_REGEX = re.compile(r'\b[A-Z]{5}\d{4}[A-Z]{1}\b')
+GST_LABELS = ['GSTIN', 'GST NO', 'GST NUMBER', 'GST NUM', 'GOODS AND SERVICES TAX', 'UIN', 'GST REG']
 COMPLIANCE_APPROVED_STATUS = 'COMPLIANCE_APPROVED'
 LEGACY_COMPLIANCE_APPROVED_STATUS = 'Approved'
 COMPLIANCE_APPROVED_STATUSES = {LEGACY_COMPLIANCE_APPROVED_STATUS, COMPLIANCE_APPROVED_STATUS}
@@ -246,6 +248,35 @@ def _extract_address(ocr_text):
     return ''
 
 
+def _extract_gst_from_text(text):
+    if not text:
+        return ''
+    upper = text.upper()
+    gst_match = GST_REGEX.search(upper)
+    if gst_match:
+        return gst_match.group(0)
+    for label in GST_LABELS:
+        idx = upper.find(label)
+        if idx >= 0:
+            after = upper[idx + len(label):]
+            candidate = re.sub(r'[^A-Z0-9]', '', after)
+            if len(candidate) >= 15:
+                candidate_15 = candidate[:15]
+                pan_part = candidate_15[2:12]
+                if re.match(r'^[A-Z]{5}\d{4}[A-Z]$', pan_part):
+                    return candidate_15
+    no_space = re.sub(r'\s+', '', upper)
+    gst_lenient = GST_REGEX.search(no_space)
+    if gst_lenient:
+        return gst_lenient.group(0)
+    lenient_match = GST_REGEX_LENIENT.search(no_space)
+    if lenient_match:
+        result = lenient_match.group(0)
+        result = result.replace('O', '0').replace('I', '1').replace('l', '1')
+        return result
+    return ''
+
+
 def _run_ocr_for_document(document_type, file_data, file_name):
     print(f'OCR DEBUG: _run_ocr_for_document invoked document_type={document_type} file_name={file_name} pytesseract_available={bool(pytesseract)}')
     if document_type not in OCR_DOCUMENT_TYPES:
@@ -305,10 +336,8 @@ def _run_ocr_for_document(document_type, file_data, file_name):
 
         extracted_gst = ''
         extracted_pan = ''
-        gst_match = GST_REGEX.search(normalized_text)
+        extracted_gst = _extract_gst_from_text(extracted_text)
         pan_match = PAN_REGEX.search(normalized_text)
-        if gst_match:
-            extracted_gst = gst_match.group(0)
         if pan_match:
             extracted_pan = pan_match.group(0)
         print(f'OCR DEBUG: extracted_gst={extracted_gst} extracted_pan={extracted_pan}')
