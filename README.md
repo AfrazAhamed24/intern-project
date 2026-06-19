@@ -1,4 +1,4 @@
-# 🚀 Vendor Onboarding & Compliance Portal
+#        Vendor Onboarding & Compliance Portal
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="60" height="60"/>
